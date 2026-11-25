@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Create a polished, professional resume in minutes with a free online resume builder.">
+  <title>Resume Studio — Build a resume that opens doors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Resume Studio home">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>resume<span class="brand-light">studio</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#templates">Templates</a>
+      <a href="#builder">Resume builder</a>
+    </nav>
+    <a class="nav-cta" href="#builder">Create my resume <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>A resume that gets<br>you <span>noticed.</span></h1>
+        <p class="hero-description">A great opportunity deserves a great first impression. Build a beautiful, recruiter-ready resume in minutes — no design skills required.</p>
+        <a class="button button-primary hero-button" href="#builder">Build my resume <span aria-hidden="true">→</span></a>
+        <div class="hero-proof"><span class="proof-avatars" aria-hidden="true"><i>A</i><i>J</i><i>M</i></span><span><strong>Made for your next big move</strong><br>Simple, polished, and all yours.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a professional resume">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-tag tag-top"><span class="tag-check">✓</span> ATS-friendly</div>
+        <div class="resume-art-card">
+          <div class="art-card-top"><div class="art-avatar">JD</div><div><span class="art-name">Jordan Davis</span><span class="art-role">PRODUCT DESIGNER</span></div></div>
+          <div class="art-contact"><span>jordan@email.com</span><span>San Francisco, CA</span></div>
+          <div class="art-rule"></div><div class="art-label">PROFILE</div><div class="art-lines"><i></i><i></i><i class="short"></i></div>
+          <div class="art-label art-label-gap">EXPERIENCE</div><div class="art-job"><b>Senior Product Designer</b><span>Northstar Studio · 2021 — Present</span></div><div class="art-lines"><i></i><i class="short"></i></div>
+          <div class="art-job art-job-gap"><b>Product Designer</b><span>Brightside · 2018 — 2021</span></div><div class="art-lines"><i></i><i class="short"></i></div>
+          <div class="art-skills"><i>Figma</i><i>Strategy</i><i>Prototyping</i></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span aria-hidden="true">✦</span> Your story, beautifully told</div>
+        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+      </div>
+      <a class="scroll-hint" href="#builder"><span></span> LET'S GET STARTED</a>
+    </section>
+
+    <section class="builder-section" id="builder">
+      <div class="section-heading">
+        <p class="eyebrow">THE RESUME WORKSHOP</p>
+        <h2>Let's make it <span>official.</span></h2>
+        <p>Fill in your details and watch your resume come together in real time.</p>
+      </div>
+
+      <div class="builder-layout">
+        <form class="editor-panel" id="resume-form" novalidate>
+          <div class="editor-heading"><div><span class="step-label">YOUR DETAILS</span><h3>Tell your story</h3></div><span class="live-indicator"><i></i> Live preview</span></div>
+          <div class="form-section">
+            <div class="form-section-title"><span class="section-icon">01</span><div><h4>Personal details</h4><p>Start with the essentials.</p></div></div>
+            <div class="photo-upload-row">
+              <div class="photo-placeholder" id="photo-placeholder" aria-hidden="true">JD</div>
+              <div class="photo-upload-copy"><strong>Add a profile photo</strong><span>Optional · JPG, PNG or WebP</span><label class="upload-button" for="profile-photo">Choose photo</label><input id="profile-photo" type="file" accept="image/jpeg,image/png,image/webp" class="visually-hidden"></div>
+              <button type="button" class="text-button hidden" id="remove-photo">Remove</button>
+            </div>
+            <div class="form-grid">
+              <label class="field field-wide">Full name <span class="required">*</span><input id="full-name" name="name" autocomplete="name" placeholder="e.g. Jordan Davis" required maxlength="80"></label>
+              <label class="field">Professional title<input id="job-title" name="title" placeholder="e.g. Product Designer" maxlength="100"></label>
+              <label class="field">Email address <span class="required">*</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="120"></label>
+              <label class="field">Phone number<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (555) 123-4567" maxlength="40"></label>
+              <label class="field">Location<input id="location" name="location" autocomplete="address-level2" placeholder="City, Country" maxlength="100"></label>
+              <label class="field">LinkedIn / Portfolio<input id="website" name="website" type="url" placeholder="https://yourwebsite.com" maxlength="200"></label>
+              <label class="field field-wide">Career objective<textarea id="objective" name="objective" rows="3" placeholder="A short introduction about your goals, strengths, and what you bring to your next role..." maxlength="600"></textarea><span class="field-hint"><span id="objective-count">0</span>/600 characters</span></label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title"><span class="section-icon">02</span><div><h4>Work experience</h4><p>Show the impact you've made.</p></div></div>
+            <div class="repeat-list" id="experience-list"></div>
+            <button type="button" class="add-button" data-add="experience"><span>＋</span> Add experience</button>
+          </div>
+          <div class="form-section">
+            <div class="form-section-title"><span class="section-icon">03</span><div><h4>Education</h4><p>Highlight your learning journey.</p></div></div>
+            <div class="repeat-list" id="education-list"></div>
+            <button type="button" class="add-button" data-add="education"><span>＋</span> Add education</button>
+          </div>
+          <div class="form-section">
+            <div class="form-section-title"><span class="section-icon">04</span><div><h4>Skills</h4><p>What do you do best?</p></div></div>
+            <div class="chip-input-wrap"><div class="chip-list" id="skills-list"></div><input id="skill-entry" class="chip-entry" placeholder="Type a skill and press Enter" maxlength="40" aria-label="Add a skill"></div>
+            <p class="field-hint">Press Enter or comma to add a skill.</p>
+          </div>
+          <div class="form-section">
+            <div class="form-section-title"><span class="section-icon">05</span><div><h4>More about you</h4><p>Languages and interests add personality.</p></div></div>
+            <div class="form-grid two-col-lists">
+              <div class="field"><span class="field-label">Languages</span><div class="simple-list" id="languages-list"></div><button type="button" class="add-button add-button-small" data-add="language"><span>＋</span> Add a language</button></div>
+              <div class="field"><span class="field-label">Hobbies & interests</span><div class="simple-list" id="hobbies-list"></div><button type="button" class="add-button add-button-small" data-add="hobby"><span>＋</span> Add an interest</button></div>
+            </div>
+          </div>
+          <div class="form-actions"><p><span class="required">*</span> Required fields</p><button class="button button-primary generate-button" type="submit">Generate resume <span aria-hidden="true">→</span></button></div>
+          <p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
+        </form>
+
+        <aside class="preview-column" aria-label="Resume preview">
+          <div class="preview-toolbar"><div><span class="step-label">YOUR PREVIEW</span><h3>Looking good.</h3></div><span class="preview-live"><i></i> LIVE</span></div>
+          <div class="template-picker" id="templates">
+            <div class="template-picker-heading"><span>Choose a style</span><a href="#templates" class="template-more">3 templates</a></div>
+            <div class="template-options" role="group" aria-label="Resume template">
+              <button type="button" class="template-option active" data-template="modern" aria-pressed="true"><span class="template-swatch swatch-modern"><i></i><i></i><i></i></span><span>Modern</span></button>
+              <button type="button" class="template-option" data-template="classic" aria-pressed="false"><span class="template-swatch swatch-classic"><i></i><i></i><i></i></span><span>Classic</span></button>
+              <button type="button" class="template-option" data-template="minimal" aria-pressed="false"><span class="template-swatch swatch-minimal"><i></i><i></i><i></i></span><span>Minimal</span></button>
+            </div>
+          </div>
+          <div class="resume-paper template-modern" id="resume-preview" aria-live="polite">
+            <div class="resume-head"><div class="resume-identity"><h1 id="preview-name">Your Name</h1><p class="resume-title" id="preview-title">Your professional title</p></div><img class="resume-photo hidden" id="preview-photo" alt="Profile photo"><div class="resume-contact" id="preview-contact"></div></div>
+            <div class="resume-body">
+              <section class="resume-block" id="preview-objective-block"><h2>Profile</h2><p id="preview-objective" class="preview-placeholder">Your career objective will appear here.</p></section>
+              <section class="resume-block hidden" id="preview-experience-block"><h2>Experience</h2><div id="preview-experience"></div></section>
+              <section class="resume-block hidden" id="preview-education-block"><h2>Education</h2><div id="preview-education"></div></section>
+              <section class="resume-block hidden" id="preview-skills-block"><h2>Skills</h2><div id="preview-skills" class="preview-tags"></div></section>
+              <section class="resume-block hidden" id="preview-languages-block"><h2>Languages</h2><div id="preview-languages" class="preview-inline-list"></div></section>
+              <section class="resume-block hidden" id="preview-hobbies-block"><h2>Interests</h2><div id="preview-hobbies" class="preview-inline-list"></div></section>
+              <p class="empty-preview-note" id="empty-preview-note">Your resume will take shape as you add your details.</p>
+            </div>
+          </div>
+          <div class="preview-actions"><button type="button" class="button button-outline" id="edit-button"><span aria-hidden="true">✎</span> Edit details</button><button type="button" class="button button-primary" id="download-button"><span aria-hidden="true">↓</span> Download PDF</button></div>
+          <button type="button" class="print-link" id="print-button">Print resume <span aria-hidden="true">↗</span></button>
+          <p class="print-note">PDF download opens your browser's print dialog. Choose “Save as PDF”.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="closing-cta"><div><p class="eyebrow">ONE LAST THING</p><h2>Your next opportunity is waiting.</h2><p>Make today the day you put your best foot forward.</p></div><a class="button button-light" href="#builder">Finish my resume <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>resume<span class="brand-light">studio</span></span></a><span>Made for your next big move.</span><a href="#home">Back to top ↑</a></footer>
+  <template id="experience-template"><div class="repeat-card" data-kind="experience"><div class="repeat-card-top"><span class="repeat-number">EXPERIENCE</span><button type="button" class="remove-button" aria-label="Remove experience">Remove</button></div><div class="form-grid"><label class="field field-wide">Job title<input data-field="role" placeholder="e.g. Senior Product Designer" maxlength="100"></label><label class="field">Company<input data-field="company" placeholder="Company name" maxlength="100"></label><label class="field">Location<input data-field="location" placeholder="City, Country" maxlength="100"></label><label class="field">Start date<input data-field="start" placeholder="Jan 2022" maxlength="30"></label><label class="field">End date<input data-field="end" placeholder="Present" maxlength="30"></label><label class="field field-wide">Key achievements<textarea data-field="details" rows="3" placeholder="Describe your impact, responsibilities, or accomplishments..." maxlength="600"></textarea></label></div></div></template>
+  <template id="education-template"><div class="repeat-card" data-kind="education"><div class="repeat-card-top"><span class="repeat-number">EDUCATION</span><button type="button" class="remove-button" aria-label="Remove education">Remove</button></div><div class="form-grid"><label class="field field-wide">Degree / qualification<input data-field="degree" placeholder="e.g. B.A. Graphic Design" maxlength="120"></label><label class="field field-wide">School / institution<input data-field="school" placeholder="University or school name" maxlength="120"></label><label class="field">Start date<input data-field="start" placeholder="2018" maxlength="30"></label><label class="field">End date<input data-field="end" placeholder="2022" maxlength="30"></label><label class="field field-wide">Additional details<textarea data-field="details" rows="2" placeholder="Honors, relevant coursework, or activities..." maxlength="400"></textarea></label></div></div></template>
+  <script src="script.js" defer></script>
+</body>
+</html>
